@@ -11,6 +11,9 @@ $hot-grey:  rgb(175, 170, 170);
 $accent-color:rgb(202, 127, 142);
 $hot-accent: rgb(144, 182, 223);
 
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
 @mixin button-gen {
     font-size: 1.5rem;
     color: rgb(255, 253, 253);

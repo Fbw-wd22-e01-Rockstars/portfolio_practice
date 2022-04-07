@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fbw-wd22-e01-Rockstars/portfolio_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fbw-wd22-e01-Rockstars/portfolio_practice/issues"
+  },
+  "homepage": "https://github.com/Fbw-wd22-e01-Rockstars/portfolio_practice#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
