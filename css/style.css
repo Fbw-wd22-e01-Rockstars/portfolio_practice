@@ -11294,64 +11294,70 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.flashback {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0;
-  width: 100vw;
+.navbar {
+  padding: 0.5em;
   font-size: 1.2rem;
+  margin: 0 auto;
+  background-color: #c0c5ff !important;
 }
-.flashback #navbarNav {
-  justify-content: end;
-  align-items: flex-end;
+.navbar > div div:nth-of-type(2) {
+  font-size: 1.2rem;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: calc(30rem + 0.04vw);
 }
-.flashback #navbarNav ul {
-  width: 90%;
+.navbar > div div:nth-of-type(2) a {
+  text-decoration: none;
+  background-color: rgb(202, 127, 142);
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0.3rem;
+  border-radius: 2.3rem;
+  line-height: 2rem;
 }
-.flashback #navbarNav ul li {
-  width: 10rem;
+.navbar > div div:nth-of-type(2) a i {
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+.navbar > div div:nth-of-type(2) a i:hover {
+  color: rgb(144, 182, 223);
+}
+.navbar #navbarNav > ul:first-child {
+  display: flex;
+  margin-left: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  max-width: 40rem;
+}
+.navbar #navbarNav > ul:first-child li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: inline-block;
   position: relative;
 }
-.flashback #navbarNav ul li a {
+.navbar #navbarNav > ul:first-child li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
-.flashback #navbarNav ul li a:before {
+.navbar #navbarNav > ul:first-child li a:before {
   content: "";
   display: block;
-  height: 2px;
+  height: 0.2rem;
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   width: 0%;
-  left: 1.5rem;
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 300ms;
+  justify-content: center;
+  align-items: center;
 }
-.flashback #navbarNav ul li a:hover::before {
-  width: 70%;
-}
-.flashback .icons {
-  width: 25%;
-  font-size: 1.2rem;
-  margin-left: 25%;
-}
-.flashback .icons a {
-  margin: 0.4rem;
-}
-.flashback .icons a i {
-  color: rgb(255, 255, 255);
-}
-.flashback .icons a i:hover {
-  color: rgb(144, 182, 223);
-  font-size: 0.5rem;
-}
-
-.navbar {
-  background-color: pink !important;
+.navbar #navbarNav > ul:first-child li a:hover::before {
+  width: 80%;
 }
 
 nav {
@@ -11973,169 +11979,4 @@ main .landing-page .tiptop {
   display: block;
   top: 8rem;
   left: 40rem;
-}
-
-@media (max-width: 768px) {
-  nav {
-    width: 100vw;
-    position: absolute;
-  }
-  nav .navbar-nav {
-    width: 20vw;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    top: 20px;
-    text-align: center;
-  }
-  nav .navbar-nav li {
-    position: relative;
-    left: 180px;
-  }
-  nav .navbar-nav li a {
-    margin-left: 0.4rem;
-    width: 7rem;
-    font-size: calc(0.2rem + 0.04vw);
-    z-index: 2;
-  }
-
-  main .landing-page .ptext {
-    position: relative;
-    top: 60vh;
-    left: 10vw;
-    text-align: center;
-    width: 90%;
-  }
-  main .landing-page .ptext .firstline {
-    position: relative;
-    right: 80%;
-  }
-  main .landing-page .ptext .firstline p {
-    font-size: calc(2rem + 0.05vw);
-  }
-  main .landing-page .ptext .firstline h1, main .landing-page .ptext .firstline .h1 {
-    font-family: "Source Code Pro", monospace !important;
-    color: rgb(202, 127, 142) !important;
-    font-size: calc(2rem + 0.05vw);
-  }
-  main .landing-page .ptext h2, main .landing-page .ptext .h2 {
-    font-family: "Source Code Pro", monospace !important;
-    color: rgb(202, 127, 142) !important;
-    margin-left: 5%;
-    font-size: calc(2rem + 0.05vw);
-  }
-  main .landing-page .ptext p:nth-child(3) {
-    width: 100%;
-    color: rgb(255, 255, 255);
-    font-size: calc(1rem + 0.05vw);
-  }
-  main .landing-page .ptext .getint {
-    width: calc(90% + 0.05vw);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  main .landing-page .ptext .getint a {
-    font-size: calc(1rem + 0.05vw);
-  }
-  main .landing-page .ptext .getint button {
-    font-size: 1.5rem;
-    color: rgb(255, 253, 253);
-    padding: 0.4em;
-    border: 2px rgb(202, 127, 142) solid;
-    background-color: transparent;
-    outline: none;
-    font-size: calc(1rem + 0.05vw);
-    padding: 0;
-    width: calc(30% + 0.05vw);
-  }
-  main .landing-page .ptext .getint button:hover {
-    background-color: rgb(31, 29, 29);
-    color: rgb(238, 106, 231);
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 1px rgb(93, 92, 92);
-  }
-
-  .about {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  .about .left-side {
-    height: 20vh;
-    position: relative;
-    top: -30%;
-    padding-top: 0;
-    width: 30vw;
-    left: 15%;
-  }
-  .about .left-side #pngthing {
-    width: 100px;
-    border: none;
-    display: none;
-  }
-  .about .left-side p {
-    font-size: calc(0.6rem + 0.4vw);
-    position: relative;
-    height: 5vh;
-    top: -1rem;
-  }
-  .about .left-side h3, .about .left-side .h3 {
-    font-size: calc(1rem + 0.4vw) !important;
-    position: relative;
-    font-style: italic;
-    height: 5vh;
-    top: -1rem;
-  }
-  .about .left-side .flexo {
-    flex-direction: row !important;
-    display: flex;
-  }
-  .about .left-side .flexo img {
-    width: 100px !important;
-    margin-left: 30px;
-    margin-top: 50px;
-  }
-  .about .left-side .flexo h1, .about .left-side .flexo .h1 {
-    position: relative;
-    top: 3rem;
-  }
-  .about #carouselExampleControls {
-    position: relative;
-    height: 40vh;
-    padding-top: 0;
-    width: 30vw;
-    flex: 1;
-    margin: 0 auto;
-    top: -30%;
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item {
-    padding-top: 140px;
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item p {
-    font-size: calc(0.5rem + 0.4vw);
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item img {
-    width: 40rem;
-    height: 20rem;
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item .cont {
-    position: relative;
-    height: 5vh;
-    top: -1rem;
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item .cont button {
-    font-size: calc(0.7rem + 0.04vw);
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item .cont a {
-    font-size: calc(0.7rem + 0.04vw);
-  }
-  .about #carouselExampleControls .carousel-inner .carousel-item h2, .about #carouselExampleControls .carousel-inner .carousel-item .h2 {
-    font-size: calc(1.5rem + 0.05vw);
-    align-items: center;
-    position: relative;
-    line-height: 0.5rem;
-  }
 }/*# sourceMappingURL=style.css.map */
