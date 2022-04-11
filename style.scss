@@ -334,15 +334,18 @@ nav {
         top:10rem;
         text-shadow: 2px 2px 2px rgb(93, 92, 92);
 
-        .firstline  { display: flex; }
+        .firstline  { 
+            display: flex;
+             }
         
     
-        h2,p {
+        h3,p {
             font-family: $typewriter !important;
             color: $accent-color !important;
+            padding:1em;
         
             }
-        h2 {
+        h3 {
             margin-left:calc(2em + 0.04vw);
             font-size: $large;
         }
