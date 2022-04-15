@@ -11397,13 +11397,6 @@ nav {
   width: 20px !important;
   border: none;
 }
-.about > div:nth-child(1) h3, .about > div:nth-child(1) .h3 {
-  padding-bottom: 0;
-  padding-top: 30px;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
-  color: white;
-}
 .about > div:nth-child(1) p {
   margin-top: 10px;
   text-align: center;
@@ -11475,7 +11468,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 60rem;
+  max-width: 70rem;
   max-height: 300rem;
   flex-direction: column;
   margin: 0 auto;
@@ -11485,14 +11478,10 @@ nav {
 .ptext .firstline {
   display: flex;
 }
-.ptext h3, .ptext .h3, .ptext p {
+.ptext p {
   font-family: "Source Code Pro", monospace !important;
   color: rgb(202, 127, 142) !important;
   padding: 1em;
-}
-.ptext h3, .ptext .h3 {
-  margin-left: calc(2em + 0.04vw);
-  font-size: 2rem;
 }
 .ptext p:nth-child(3) {
   color: rgb(255, 255, 255);
@@ -11535,7 +11524,7 @@ nav {
   color: white;
 }
 
-.showcase h3, .showcase .h3 {
+.showcase h1, .showcase .h1 {
   font-size: 4rem;
   color: #fff;
   font-family: "Source Code Pro", monospace;
@@ -11543,13 +11532,13 @@ nav {
 }
 
 .showcase h3, .showcase .h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: capitalize;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid black;
   width: 30ch;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: "Source Code Pro", monospace;
   -webkit-animation: typist 16s steps(24) infinite, blink 1s infinite;
           animation: typist 16s steps(24) infinite, blink 1s infinite;
