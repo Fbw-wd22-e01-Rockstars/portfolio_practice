@@ -328,20 +328,26 @@ nav {
 
         .firstline  { 
             
-             min-width: 60%;
-             min-height:5vh;
+             min-width: 100%;
+             min-height:2em;
              display: flex;
-            //  background-color: blue;
+             background-color: blue;
              text-align: center;
              justify-content: center;
+
 
              
              
 
              .whatsupwithdat {
                  display: flex;
-                 width: 70%;
-                //  background-color: red;
+                 width: 90%;
+                 background-color: red;
+                 text-align: center;
+                 justify-content: center;
+                 
+                
+                 
                  
                  
                 
@@ -351,10 +357,13 @@ nav {
                     font-family: $typewriter !important;
                     color: $accent-color !important;
                     margin-bottom: 0 !important;
-                    line-height: 3rem;
-                    font-size: $large;
+                    line-height: 4em;
+                   text-align: end;
+                    font-size: $medium;
                     min-width: 50%;
-                
+                    padding-right: 0.5em;
+                    justify-content: center;
+                   
                     
                     }
                 }
@@ -425,8 +434,10 @@ nav {
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
-    
-    
+    min-width: 50%;
+    margin-bottom: 0 !important;
+   
+  
     
     
     
@@ -459,6 +470,7 @@ nav {
 
 
 .glitch {
+    display: flex;
     
   
     text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
@@ -470,10 +482,15 @@ nav {
   
   .glitch span {
     position: absolute;
-    top: 0;
     left: 0;
+    top: 10%;
+   
+    align-content: center;
+    justify-content: center;
+    display: flex;
     font-family: $typewriter !important;
     padding-left: 0.4em;
+  
     
   }
   

@@ -11475,23 +11475,30 @@ nav {
   text-shadow: 2px 2px 2px rgb(93, 92, 92);
 }
 .ptext .firstline {
-  min-width: 60%;
-  min-height: 5vh;
+  min-width: 100%;
+  min-height: 2em;
   display: flex;
+  background-color: blue;
   text-align: center;
   justify-content: center;
 }
 .ptext .firstline .whatsupwithdat {
   display: flex;
-  width: 70%;
+  width: 90%;
+  background-color: red;
+  text-align: center;
+  justify-content: center;
 }
 .ptext .firstline .whatsupwithdat p {
   font-family: "Source Code Pro", monospace !important;
   color: rgb(202, 127, 142) !important;
   margin-bottom: 0 !important;
-  line-height: 3rem;
-  font-size: 2rem;
+  line-height: 4em;
+  text-align: end;
+  font-size: 1.2rem;
   min-width: 50%;
+  padding-right: 0.5em;
+  justify-content: center;
 }
 
 * {
@@ -11536,6 +11543,8 @@ nav {
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  min-width: 50%;
+  margin-bottom: 0 !important;
 }
 
 .showcase h3, .showcase .h3 {
@@ -11604,6 +11613,7 @@ nav {
   }
 }
 .glitch {
+  display: flex;
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
   -webkit-animation: glitch 500ms infinite;
           animation: glitch 500ms infinite;
@@ -11611,8 +11621,11 @@ nav {
 
 .glitch span {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 10%;
+  align-content: center;
+  justify-content: center;
+  display: flex;
   font-family: "Source Code Pro", monospace !important;
   padding-left: 0.4em;
 }
