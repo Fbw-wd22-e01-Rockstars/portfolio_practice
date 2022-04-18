@@ -11463,29 +11463,34 @@ nav {
 }
 
 .ptext {
-  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 70rem;
-  max-height: 300rem;
   flex-direction: column;
-  margin: 0 auto;
-  top: 10rem;
+  max-width: 70rem;
+  max-height: 500rem;
+  margin: 15vh auto;
   text-shadow: 2px 2px 2px rgb(93, 92, 92);
 }
 .ptext .firstline {
+  min-width: 60%;
+  min-height: 5vh;
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
-.ptext p {
+.ptext .firstline .whatsupwithdat {
+  display: flex;
+  width: 70%;
+}
+.ptext .firstline .whatsupwithdat p {
   font-family: "Source Code Pro", monospace !important;
   color: rgb(202, 127, 142) !important;
-  padding: 1em;
-}
-.ptext p:nth-child(3) {
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+  margin-bottom: 0 !important;
+  line-height: 3rem;
+  font-size: 2rem;
+  min-width: 50%;
 }
 
 * {
@@ -11525,13 +11530,15 @@ nav {
 }
 
 .showcase h1, .showcase .h1 {
-  font-size: 4rem;
   color: #fff;
   font-family: "Source Code Pro", monospace;
-  font-weight: bold;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .showcase h3, .showcase .h3 {
+  margin: 0 auto;
   font-size: 2rem;
   text-transform: capitalize;
   overflow: hidden;
@@ -11596,9 +11603,6 @@ nav {
   }
 }
 .glitch {
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
   -webkit-animation: glitch 500ms infinite;
           animation: glitch 500ms infinite;
@@ -11609,6 +11613,7 @@ nav {
   top: 0;
   left: 0;
   font-family: "Source Code Pro", monospace !important;
+  padding-left: 0.4em;
 }
 
 .glitch span:first-child {
@@ -11929,7 +11934,6 @@ main .landing-page {
   background-repeat: no-repeat;
   max-width: 100%;
   max-height: 100%;
-  position: relative;
   z-index: 0;
   overflow: hidden;
 }
@@ -11947,5 +11951,5 @@ main .landing-page .tiptop {
   background-size: cover;
   z-index: 6;
   display: block;
-  left: 5rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

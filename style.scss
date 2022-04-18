@@ -99,7 +99,7 @@ body {
             margin-left: 0;
             align-items: center;
             text-align: center;
-            // background-color: blue;
+          
             justify-content: flex-start;
             max-width: 40rem;
             
@@ -177,8 +177,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-   
-  
+
 
 }
 
@@ -186,7 +185,6 @@ nav {
 
 .about {
     background-image: url(./img/);
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -226,14 +224,7 @@ nav {
         }
       
         
-        // h3 {
-        //     padding-bottom: 0;
-        //     padding-top: 30px;
-        //     font-family: $primary-font;
-        //     font-size: $medium;
-        //     color: white;
-        // }
-
+      
        
         p {
             margin-top: 10px;
@@ -321,42 +312,60 @@ nav {
 
     .ptext {
         
-        position: relative;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 70rem;
-        max-height: 300rem;
         flex-direction: column;
-        margin: 0 auto;
-        top:10rem;
+        max-width: 70rem;
+        max-height: 500rem;
+        margin: 15vh auto;
         text-shadow: 2px 2px 2px rgb(93, 92, 92);
+        
+        
+        
+    
 
         .firstline  { 
-            display: flex;
-             }
-        
-    
-        p {
-            font-family: $typewriter !important;
-            color: $accent-color !important;
-            padding:1em;
-        
-            }
-       
             
-        p:nth-child(3) { 
-        color:$primary-color;
-        font-size: $medium;
-    
-         }
+             min-width: 60%;
+             min-height:5vh;
+             display: flex;
+            //  background-color: blue;
+             text-align: center;
+             justify-content: center;
+
+             
+             
+
+             .whatsupwithdat {
+                 display: flex;
+                 width: 70%;
+                //  background-color: red;
+                 
+                 
+                
+                
+
+                p {
+                    font-family: $typewriter !important;
+                    color: $accent-color !important;
+                    margin-bottom: 0 !important;
+                    line-height: 3rem;
+                    font-size: $large;
+                    min-width: 50%;
+                
+                    
+                    }
+                }
+
+               
+             }
+             
+        
     }
 
  
-
-
-
 
 *{
     margin:0px;
@@ -368,17 +377,14 @@ nav {
 
 
     .getint {
-        
+       
             button {
                 
                 @include button-gen;
                 &:hover {
                     background-color: rgba(192, 192, 192, 0.281);
-                    
                     font-size: 1.5rem;
                     text-shadow: 1px 1px 1px rgb(93, 92, 92);
-                   
-                    
                     
                 }
 
@@ -413,13 +419,20 @@ nav {
 
 
   .showcase h1{
-    font-size:4rem;
+
     color: #fff;
     font-family: $typewriter;
-    font-weight: bold;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    
+    
+    
+    
     
   }
   .showcase h3{
+    margin: 0 auto;
     font-size:2rem;
     text-transform: capitalize;
     overflow: hidden;
@@ -447,11 +460,6 @@ nav {
 
 .glitch {
     
-    font-weight: 400;
-    text-transform: uppercase;
-    position: relative;
-    
-    
   
     text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
       -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
@@ -465,6 +473,8 @@ nav {
     top: 0;
     left: 0;
     font-family: $typewriter !important;
+    padding-left: 0.4em;
+    
   }
   
   .glitch span:first-child {
@@ -836,9 +846,15 @@ main {
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 100%;
-        position: relative;
+        // position: relative;
         z-index: 0;
         overflow: hidden;
+        // position: relative;
+        // text-align: center;
+        // display: flex;
+        //  align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
 
 
          .overlay_color {
@@ -854,10 +870,10 @@ main {
             width: 40rem;
             height: 30rem;
             background-size: cover;
-        
             z-index: 6;
             display: block;
-            left: 5rem;
+            margin: 0 auto;
+            
             
 
             
