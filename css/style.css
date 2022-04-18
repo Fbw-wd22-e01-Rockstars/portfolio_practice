@@ -11478,12 +11478,10 @@ nav {
   min-width: 100%;
   min-height: 4em;
   display: flex;
-  background-color: blue;
 }
 .ptext .firstline .whatsupwithdat {
   display: flex;
   width: 100%;
-  background-color: red;
 }
 .ptext .firstline .whatsupwithdat p {
   font-family: "Source Code Pro", monospace !important;
