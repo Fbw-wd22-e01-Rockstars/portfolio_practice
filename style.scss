@@ -15,12 +15,19 @@ $hot-accent: rgb(116, 148, 182);
 
 
 @mixin button-gen {
-    font-size: 1.5rem;
+    font-size:$medium;
     color: rgb(255, 253, 253);
-    padding: 0.4em;
+    padding: 1em;
     border: 2px rgb(202, 127, 142) solid;
     background-color:transparent;
     outline: none;
+    display: inline-block;
+    height: 2.5rem;
+    line-height: 0.2em;
+    border-radius: 10px;
+    
+
+
 
 }
 
@@ -318,18 +325,17 @@ nav {
         justify-content: center;
         flex-direction: column;
         max-width: 70rem;
-        max-height: 500rem;
-        margin: 15vh auto;
+        max-height: 100;
+        margin: 14vh auto;
         text-shadow: 2px 2px 2px rgb(93, 92, 92);
         
-        
-        
+
     
 
         .firstline  { 
             
              min-width: 100%;
-             min-height:4em;
+             min-height:3em;
              display: flex;
             
              .whatsupwithdat {
@@ -347,7 +353,7 @@ nav {
                     padding-right: 0.5em;
                     align-content: center;
                     align-items: center;
-                    padding-top: 0.6em;
+                    padding-top: 0.3em;
                   
                    
                    
@@ -356,6 +362,69 @@ nav {
 
                
              }
+
+
+
+    .getint{
+        display: flex;
+        width: 100%;
+        text-align: center;
+
+        .whatsupwithdat2 {
+            width:100%;
+            display: flex;
+            min-height:3em;
+            justify-content: center;
+                
+                
+                .butino {
+                    width:50%;
+                    justify-content: end;
+                    text-align: end;
+                    padding-right: 0.4em;
+
+                   
+        
+                    button {
+                        
+                        
+                        @include button-gen;
+                        &:hover {
+                            background-color: rgba(192, 192, 192, 0.281);
+                            text-shadow: 1px 1px 1px rgb(93, 92, 92);
+                            
+                        }
+                    }
+
+                }
+
+                a {
+                    width:50%;
+                    height: 2.5rem;
+                    line-height: 2em;
+
+                    text-decoration: none;
+                    font-size: $medium;
+                    color:$hot-grey;
+                    text-align: start;
+
+                    &:after {
+                        content: "\f178";
+                            font-family: "fontawesome";
+                            padding-left:10px;
+                            font-weight: 50px;
+
+                    }
+
+                    &:hover {
+                        color: white;
+
+                    }
+                }
+            
+        }
+
+    }
              
         
     }
@@ -370,45 +439,6 @@ nav {
   }
   
 
-
-    .getint {
-       
-            button {
-                
-                @include button-gen;
-                &:hover {
-                    background-color: rgba(192, 192, 192, 0.281);
-                    font-size: 1.5rem;
-                    text-shadow: 1px 1px 1px rgb(93, 92, 92);
-                    
-                }
-
-            }
-
-            a {
-                line-height: 70px;
-                padding-left: 30px;
-                text-decoration: none;
-                font-size: $medium;
-                color:$hot-grey;
-
-                &:after {
-                    content: "\f178";
-                        font-family: "fontawesome";
-                        padding-left:10px;
-                        font-weight: 50px;
-
-                }
-
-                &:hover {
-                    color: white;
-
-                }
-            }
-        
-    }
-
- 
 
 
 
@@ -436,7 +466,7 @@ nav {
   }
   .showcase h3{
     margin: 0 auto;
-    font-size:2rem;
+    font-size:$large;
     text-transform: capitalize;
     overflow: hidden;
     white-space: nowrap;
@@ -475,7 +505,7 @@ nav {
   .glitch span {
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 15%;
     align-content: center;
     justify-content: center;
     display: flex;
@@ -745,7 +775,7 @@ footer {
         border-radius: 7px;
         border: 0.07em solid #00fbd1;
         width: 20em;
-        height: 2.6em;
+        height: 1em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -875,8 +905,8 @@ main {
 
         .tiptop {
             background-image: url(../img/casual-life-3d-likes.png);
-            width: 40rem;
-            height: 30rem;
+            width: 30rem;
+            height: 20rem;
             background-size: cover;
             z-index: 6;
             display: block;
