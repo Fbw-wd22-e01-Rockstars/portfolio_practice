@@ -1,7 +1,7 @@
 $small:0.5rem;
 $intermidi:0.9rem;
 $medium:1.2rem;
-$large:2rem;
+$large:1.6rem;
 $primary-font: 'Nunito', sans-serif;
 $accent-font: 'Montserrat Subrayada', sans-serif;
 $typewriter: 'Source Code Pro', monospace;
@@ -329,11 +329,10 @@ nav {
         .firstline  { 
             
              min-width: 100%;
-             min-height:2em;
+             min-height:4em;
              display: flex;
              background-color: blue;
-             text-align: center;
-             justify-content: center;
+            
 
 
              
@@ -341,30 +340,25 @@ nav {
 
              .whatsupwithdat {
                  display: flex;
-                 width: 90%;
+                 width: 100%;
                  background-color: red;
-                 text-align: center;
-                 justify-content: center;
-                 
                 
                  
-                 
-                 
-                
-                
 
                 p {
                     font-family: $typewriter !important;
                     color: $accent-color !important;
                     margin-bottom: 0 !important;
-                    line-height: 4em;
-                   text-align: end;
-                    font-size: $medium;
+                    text-align: end;
+                    font-size: $large;
                     min-width: 50%;
                     padding-right: 0.5em;
-                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    padding-top: 0.6em;
+                  
                    
-                    
+                   
                     }
                 }
 
@@ -423,7 +417,10 @@ nav {
     }
 
  
-  
+
+
+
+   
 
 
 
@@ -436,6 +433,9 @@ nav {
     position: relative;
     min-width: 50%;
     margin-bottom: 0 !important;
+    justify-content: center;
+    text-align: center;
+  
    
   
     
@@ -483,8 +483,7 @@ nav {
   .glitch span {
     position: absolute;
     left: 0;
-    top: 10%;
-   
+    top: 20%;
     align-content: center;
     justify-content: center;
     display: flex;

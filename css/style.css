@@ -11476,29 +11476,26 @@ nav {
 }
 .ptext .firstline {
   min-width: 100%;
-  min-height: 2em;
+  min-height: 4em;
   display: flex;
   background-color: blue;
-  text-align: center;
-  justify-content: center;
 }
 .ptext .firstline .whatsupwithdat {
   display: flex;
-  width: 90%;
+  width: 100%;
   background-color: red;
-  text-align: center;
-  justify-content: center;
 }
 .ptext .firstline .whatsupwithdat p {
   font-family: "Source Code Pro", monospace !important;
   color: rgb(202, 127, 142) !important;
   margin-bottom: 0 !important;
-  line-height: 4em;
   text-align: end;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   min-width: 50%;
   padding-right: 0.5em;
-  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 0.6em;
 }
 
 * {
@@ -11545,6 +11542,8 @@ nav {
   position: relative;
   min-width: 50%;
   margin-bottom: 0 !important;
+  justify-content: center;
+  text-align: center;
 }
 
 .showcase h3, .showcase .h3 {
@@ -11622,7 +11621,7 @@ nav {
 .glitch span {
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 20%;
   align-content: center;
   justify-content: center;
   display: flex;
