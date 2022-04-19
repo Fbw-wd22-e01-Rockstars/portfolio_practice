@@ -31,12 +31,6 @@ $hot-accent: rgb(116, 148, 182);
 
 }
 
-#aboutme
- {
-    position:relative;
-    background-color: red;
-    
-}
 
 
 body {
@@ -197,68 +191,70 @@ nav {
     background-position: center;
     padding-top: 30px;
 
-    &>div:nth-child(1) {
+    .description {
+        display: flex;
+        padding-top: 2.5em;
+        text-align:left;
+        padding-right: 1em;
+        padding-left: 1em;
+        width: max(48rem,90%);
+        margin: 0 auto;
+
+        .quote {
+            padding-left: 1em;
 
 
-        .flexo {
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            h1 {
+            h3 {
                 font-family: $primary-font;
                 text-decoration: underline;
                 text-transform: uppercase;
                 color: rgb(255, 255, 255);
-                font-weight:bold;
-                
+                font-weight:$small !important;
+            
             }
-    
+
+            p {
+                margin-top: 0;
+                text-align: center;
+                color: white;
+                font-size: $intermidi;
+                font-family: $primary-font;
+                text-align: left;
+                margin-bottom: 0 !important;
+            
+            }
+        }
+
+        
+        .flexo {
+            margin: 0 auto;
+            
             img { 
              
                 border-radius: 200px;
                 border: solid 5px white;
-                width: 200px;
+                width: max(140px);
     
-            }
-
-            #pngthing {
-                width: 20px !important; 
-                border: none;
-            }
-        }
-      
-        
-      
-       
-        p {
-            margin-top: 10px;
-            text-align: center;
-            color: white;
-            font-size: $intermidi;
-            font-family: $primary-font;
-           
-            
-
+            }     
         }
     }
 #carouselExampleControls {
-    width: 80%;
+    width: max(100rem, 95%);
+    height: max (500rem, 100%);
+    margin: 0 auto;
     .carousel-inner {
         .carousel-item {
             text-align: center;
-            padding-top: 90px;
+            padding-top: 10px;
                         
-            h2 {
-                padding-top: 20px;
-                font-weight: bold;
+            h4 {
+                padding-top: 5px;
+                font-weight: $small !important;
                 color: white;
             }
             &>img{
             
-                max-width: 80%;
+                width: min(80%);
                 height: 450px;
                 border-radius: 20px;
                 margin: 0 auto;
@@ -267,7 +263,7 @@ nav {
             p {
                 
                 margin: 0 auto;
-                font-size: $medium;
+                font-size: $intermidi;
                 width: 700px;
                 padding-bottom: 2rem;
                 color: white;
@@ -325,7 +321,7 @@ nav {
         justify-content: center;
         flex-direction: column;
         max-width: 70rem;
-        max-height: 100;
+        max-height: 60rem;
         margin: 14vh auto;
         text-shadow: 2px 2px 2px rgb(93, 92, 92);
         
@@ -797,13 +793,14 @@ footer {
     height: 100vh;}
     
 
-    #aboutme {
-        background:linear-gradient(to bottom, rgba(16, 43, 194, 0.52), rgba(117, 19, 93, 0.73)), url("https://live.staticflickr.com/65535/51922772370_fd562bbe94_k.jpg")
+#aboutme {
+    background:linear-gradient(to bottom, rgba(16, 43, 194, 0.52), rgba(117, 19, 93, 0.73)), url("https://live.staticflickr.com/65535/51922772370_fd562bbe94_k.jpg")
     no-repeat center center / cover;
     color: white;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;}
+    height: 100vh;
+}
 
    
 
@@ -887,13 +884,7 @@ main {
         position: relative;
         z-index: 0;
         overflow: hidden;
-        // position: relative;
-        // text-align: center;
-        // display: flex;
-        //  align-items: center;
-        // justify-content: center;
-        // flex-direction: column;
-
+      
 
          .overlay_color {
              width: 100%;
