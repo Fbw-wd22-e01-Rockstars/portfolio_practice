@@ -190,6 +190,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 30px;
+    max-width: 100vw;
 
     .description {
         display: flex;
@@ -239,23 +240,22 @@ nav {
         }
     }
 #carouselExampleControls {
-    width: max(100rem, 95%);
-    height: max (500rem, 100%);
+
     margin: 0 auto;
     .carousel-inner {
         .carousel-item {
             text-align: center;
-            padding-top: 10px;
+            padding-top: 0;
                         
             h4 {
                 padding-top: 5px;
                 font-weight: $small !important;
                 color: white;
             }
-            &>img{
+            img{
             
-                width: min(80%);
-                height: 450px;
+                width: min(70%, 50rem);
+                height: min(70%,50rem);
                 border-radius: 20px;
                 margin: 0 auto;
                 
