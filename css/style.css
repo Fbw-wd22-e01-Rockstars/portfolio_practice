@@ -11982,10 +11982,8 @@ main .landing-page .overlay_color {
   position: absolute;
 }
 main .landing-page .tiptop {
-  background-image: url(../img/casual-life-3d-likes.png);
-  width: 30rem;
-  height: 20rem;
-  background-size: cover;
+  width: 45rem;
+  height: auto;
   z-index: 6;
   display: block;
   margin: 0 auto;
