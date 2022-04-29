@@ -11368,20 +11368,23 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 30px;
   max-width: 100vw;
 }
 .about .description {
   display: flex;
-  padding-top: 2.5em;
-  text-align: left;
-  padding-right: 1em;
-  padding-left: 1em;
-  width: max(48rem, 90%);
+  flex-direction: column;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 0.9em;
+  width: 100%;
+  padding-top: min(5.5em, 45%);
 }
-.about .description .quote {
-  padding-left: 1em;
+.about .description .flexo img {
+  border-radius: 200px;
+  border: solid 2px white;
+  width: min(5rem, 25%);
 }
 .about .description .quote h3, .about .description .quote .h3 {
   font-family: "Nunito", sans-serif;
@@ -11392,20 +11395,13 @@ nav {
 }
 .about .description .quote p {
   margin-top: 0;
-  text-align: center;
   color: white;
   font-size: 0.9rem;
   font-family: "Nunito", sans-serif;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0 !important;
-}
-.about .description .flexo {
+  width: min(30rem, 80%);
   margin: 0 auto;
-}
-.about .description .flexo img {
-  border-radius: 200px;
-  border: solid 5px white;
-  width: 140px;
 }
 .about #carouselExampleControls {
   margin: 0 auto;
@@ -11420,17 +11416,20 @@ nav {
   color: white;
 }
 .about #carouselExampleControls .carousel-inner .carousel-item img {
-  width: min(70%, 50rem);
-  height: min(70%, 50rem);
-  border-radius: 20px;
+  width: 40%;
+  min-width: 20rem;
   margin: 0 auto;
+  padding-top: min(1em, 10%);
 }
 .about #carouselExampleControls .carousel-inner .carousel-item p {
   margin: 0 auto;
   font-size: 0.9rem;
-  width: 700px;
+  width: 50%;
+  width: 70%;
+  padding: 0.4rem;
   padding-bottom: 2rem;
   color: white;
+  background-color: red;
 }
 .about #carouselExampleControls .carousel-inner .carousel-item div {
   text-align: center;
@@ -11438,7 +11437,7 @@ nav {
 .about #carouselExampleControls .carousel-inner .carousel-item div button {
   font-size: 1.2rem;
   color: rgb(255, 253, 253);
-  padding: 1em;
+  padding: min(0.5em, 15%);
   border: 2px rgb(202, 127, 142) solid;
   background-color: transparent;
   outline: none;
@@ -11446,18 +11445,18 @@ nav {
   height: 2.5rem;
   line-height: 0.2em;
   border-radius: 10px;
+  margin-right: min(0.5em, 5%);
 }
 .about #carouselExampleControls .carousel-inner .carousel-item div button:hover {
   background-color: rgb(0, 0, 0);
   color: rgb(116, 148, 182);
-  font-size: 1.7rem;
+  font-size: 0.5rem;
   font-weight: bold;
 }
 .about #carouselExampleControls .carousel-inner .carousel-item div a {
   text-decoration: none;
   color: white;
   font-weight: 400;
-  padding: 10px;
 }
 .about #carouselExampleControls .carousel-inner .carousel-item div a:hover {
   background-color: rgba(228, 87, 228, 0.52);
@@ -11517,12 +11516,12 @@ nav {
   width: 50%;
   justify-content: end;
   text-align: end;
-  padding-right: 0.4em;
+  padding-right: min 0.3em, 10%;
 }
 .ptext .getint .whatsupwithdat2 .butino button {
   font-size: 1.2rem;
   color: rgb(255, 253, 253);
-  padding: 1em;
+  padding: min(0.5em, 15%);
   border: 2px rgb(202, 127, 142) solid;
   background-color: transparent;
   outline: none;
@@ -11530,6 +11529,7 @@ nav {
   height: 2.5rem;
   line-height: 0.2em;
   border-radius: 10px;
+  margin-right: min(0.5em, 5%);
 }
 .ptext .getint .whatsupwithdat2 .butino button:hover {
   background-color: rgba(192, 192, 192, 0.281);
